@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Sidebar from '../components/Sidebar'
+import Topbar from '../components/Topbar'
 import { supabase } from '../lib/supabaseClient'
 import { useAuth } from '../lib/AuthContext'
 import './Profile.css'
@@ -40,7 +40,7 @@ export default function Profile() {
 
   return (
     <div className="app-shell">
-      <Sidebar />
+      <Topbar />
       <main className="profile">
         <header className="profile-header">
           <div className="profile-avatar-large">{initial}</div>

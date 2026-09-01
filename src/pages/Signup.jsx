@@ -42,17 +42,11 @@ export default function Signup() {
 
   return (
     <div className="auth-screen">
-      <div className="auth-brand">
+      <div className="auth-card">
         <div className="auth-mark">
-          Ledger<span>.</span>
+          Heha Laundry (UMOJA)<span>.</span>
         </div>
-        <div className="auth-headline">
-          <h1>Start keeping the books.</h1>
-          <p>Set up your ledger in under a minute — no spreadsheets required.</p>
-        </div>
-        <div className="auth-figure">"Beware of little expenses; a small leak will sink a great ship."</div>
-      </div>
-      <div className="auth-form-side">
+
         {confirmSent ? (
           <div className="auth-form">
             <h2>Check your inbox</h2>
@@ -66,7 +60,7 @@ export default function Signup() {
         ) : (
           <form className="auth-form" onSubmit={handleSubmit}>
             <h2>Create your account</h2>
-            <p className="auth-subtitle">It only takes a moment.</p>
+            <p className="auth-subtitle">- - - - - - - - - - - - - - - - - - - - - -</p>
 
             {error && <div className="auth-error">{error}</div>}
 

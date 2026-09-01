@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import Sidebar from '../components/Sidebar'
+import Topbar from '../components/Topbar'
 import ExpenseModal from '../components/ExpenseModal'
 import { supabase } from '../lib/supabaseClient'
 import { useAuth } from '../lib/AuthContext'
@@ -12,7 +12,7 @@ function formatDate(iso) {
 }
 
 function formatMoney(n) {
-  return n.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+  return n.toLocaleString('en-US', { style: 'currency', currency: 'KES' })
 }
 
 export default function Dashboard() {
@@ -81,12 +81,12 @@ export default function Dashboard() {
 
   return (
     <div className="app-shell">
-      <Sidebar />
+      <Topbar />
       <main className="dashboard">
         <header className="dashboard-header">
           <div>
-            <h1>Expenses</h1>
-            <p className="dashboard-subtitle">A running record of what's gone out.</p>
+            <h1>Cost Lendger</h1>
+            <p className="dashboard-subtitle">A running record of what's purchased.</p>
           </div>
           <div className="dashboard-total">
             <span>Total tracked</span>
