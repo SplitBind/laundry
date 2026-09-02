@@ -62,10 +62,11 @@ export default function Login() {
           <button className="btn-primary" type="submit" disabled={loading}>
             {loading ? 'Signing in…' : 'Sign in'}
           </button>
-
+	  {/*
           <div className="auth-switch">
             New here? <Link to="/signup">Create an account</Link>
           </div>
+	  */}
         </form>
       </div>
     </div>

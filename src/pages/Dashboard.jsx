@@ -39,6 +39,7 @@ export default function Dashboard() {
       setError(error.message)
     } else {
       setExpenses(data)
+	console.log("Expenses data:",data);
     }
     setLoading(false)
   }
