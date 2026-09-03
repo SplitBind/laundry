@@ -97,7 +97,7 @@ export default function ExpenseModal({ onClose, onSave }) {
             <input
               id="exp-item"
               type="text"
-              placeholder="e.g. Groceries"
+              placeholder="e.g Detergents, water bill e.t.c"
               value={item}
               onChange={(e) => setItem(e.target.value)}
               required
